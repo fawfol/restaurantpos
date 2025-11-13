@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="16dp"> <ImageButton
+    android:id="@+id/btnDeleteItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@android:drawable/ic_menu_delete"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:layout_alignParentEnd="true"
+    android:layout_centerVertical="true"
+    android:contentDescription="Delete Item"
+    app:tint="?android:attr/textColorSecondary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/btnDeleteItem"
+        android:layout_marginEnd="16dp">
+        <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Item Name"
+        style="@style/TextAppearance.App.TitleMedium" />
+        <TextView
+            android:id="@+id/tvItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$10.99"
+            style="@style/TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+</RelativeLayout>
